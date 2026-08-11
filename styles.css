@@ -78,26 +78,55 @@ table {
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
 main{
     font-family: 'Inter';
-}
-#InnovationandInvestment h2, p, input{
-    margin: 0%;
+    padding:0.5rem;
 }
 
- #InnovationandInvestment{
+#Expertise h2{
+    margin: 1rem;
+}
+#Expertise{
+    padding:1rem;
+}
+#WhatWeOffer h2{
+    margin: 1rem;
+}
+#WhatWeOffer{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding:1rem;
+  background-color: white;
+  color: white;
+}
+#WhatWeOffer > section{
+  flex: 1 1 260px;
+  background-color: #007BFF;
+  padding:0.5rem;
+}
+
+#WhatWeOffer section{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+ #InnovationAndInvestment{
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
     justify-content: center;
-    place-items: center;
+    align-items: center;
     text-align: center;
     overflow: hidden;
     color:white;
 }
 
+input{
+    padding: 1rem;
+}
 
-#InnovationandInvestment h2{
+#InnovationAndInvestment h2, #InnovationAndInvestment p{
+    backdrop-filter: blur(4px);
     font-size: 24px;
-    grid-row: 1;
 }
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
  #svg{
@@ -140,6 +169,15 @@ nav ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
+}
+
+h2{
+    font-size: 26px;
+    font-style: bold;
+}
+
+h3{
+    font-size: 20px;
 }
 
 /* THIS ONE IS DONE FOR YOU */
