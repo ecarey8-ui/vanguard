@@ -87,8 +87,8 @@ main{
 #Expertise{
     padding:1rem;
 }
-#WhatWeOffer h2{
-    margin: 1rem;
+#WhatWeOffer h3{
+    padding:2rem;
 }
 #WhatWeOffer{
   display: flex;
@@ -109,6 +109,24 @@ main{
     padding: 1rem;
 }
 
+#ProvenResults{
+    background-color: #007BFF;
+    color: white;
+    padding:2rem;
+}
+
+#TheResults{
+    display: flex;
+}
+
+table{
+    margin-right: 35rem;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+table 
+
  #InnovationAndInvestment{
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
@@ -122,6 +140,13 @@ main{
 
 input{
     padding: 1rem;
+}
+footer{
+    background-color: #000000;
+}
+
+#form{
+    display:flex;
 }
 
 #InnovationAndInvestment h2, #InnovationAndInvestment p{
