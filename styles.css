@@ -1,7 +1,8 @@
-/* CSS BY YOUR NAME */
+/* CSS BY Erin Carey*/
 
 /* IMPORTED FONTS*/
-/* IMPORT "INTER" FROM GOOGLE FONTS"
+/* IMPORT "INTER" FROM GOOGLE FONTS" */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -65,7 +66,8 @@ table {
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
-
+@media screen and (min-width: 400px){
+}
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
     width: 90%;
@@ -74,26 +76,72 @@ table {
 }
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
- {
+main{
+    font-family: 'Inter';
+}
+#InnovationandInvestment h2, p, input{
+    margin: 0%;
+}
+
+ #InnovationandInvestment{
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
+    justify-content: center;
     place-items: center;
     text-align: center;
-    padding: 1rem;
     overflow: hidden;
+    color:white;
 }
 
-/* ADD FLOATING SVG LOGO BEFORE THE H1 */
- {
-    content: "";
 
+#InnovationandInvestment h2{
+    font-size: 24px;
+    grid-row: 1;
+}
+/* ADD FLOATING SVG LOGO BEFORE THE H1 */
+ #svg{
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
+    margin-bottom: 3rem;
+    grid-column: 1/2;
 
 }
+header{
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+header h1{
+    color:#007BFF;
+    margin-left: 4rem;
+    padding-top: 4rem;
+    font-family: 'Inter';
+    font-size: larger;
+    grid-column: 1/2;
+}
+
+nav {
+  grid-column:3/3;
+}
+nav a {
+    color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform:uppercase;
+  padding:2rem;
+  font-size: 24px;
+  font-family: 'Inter';
+}
+nav ul {
+  display:flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
